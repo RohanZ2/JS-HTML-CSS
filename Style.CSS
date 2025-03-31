@@ -1,17 +1,18 @@
 body{
-    margin: 0px;
+    margin: 0;
 }
 h4{
     margin:0px;
-    margin-top: 25px;
-    font-size: 30px;
+    margin-top: 15px;
+    font-size: 40px;
+    color: red;
+
 }
 
 .navbar{
-    background-color:rgb(232, 230, 230);
+    background-color:rgb(255, 255, 255);
     padding: 2px;
-    border-style: ridge;
-    box-shadow: 0px 3px 5px rgb(193, 190, 190) ;
+    box-shadow: 0px 7px 7px rgb(221, 220, 220) ;
     width: 100%;
     margin: 0px;
     height: 100px;
@@ -21,7 +22,8 @@ h4{
 .NavagationBar{
     display:flex;
     align-items: center;
-    gap:20px;
+    justify-content: space-around;
+    padding: 0 20px;
 }
 
 .navbar ul{
@@ -33,11 +35,36 @@ h4{
 .navbar a{
     text-decoration: none;
     padding: 15px;
-    display: block;
+    display: inline-block;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 20px;
+    color: black;
+    font-size: 30px;
+
 }
 
 .navbar li{
     float: left;
+}
+
+.ButtonContainer{
+    text-align: center;
+    
+}
+
+.Button{
+    background-color: rgb(43, 42, 42);
+    border-radius: 4px;
+    color: white;
+}
+#Button1{
+    width: 950px;
+    height: 80px;
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+#Button2{
+    
 }
