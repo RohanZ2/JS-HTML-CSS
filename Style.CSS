@@ -53,6 +53,7 @@ h4{
 }
 
 .Button{
+    margin: 0px;
     background-color: rgb(43, 42, 42);
     border-radius: 4px;
     color: white;
@@ -60,11 +61,11 @@ h4{
 #Button1{
     width: 950px;
     height: 80px;
-    font-size: 40px;
     text-align: center;
     
 }
-
-#Button2{
-    
+h3 {
+    margin: 0px;
+    font-size: 1.75rem;
 }
+
