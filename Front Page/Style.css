@@ -11,10 +11,7 @@ a{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 button{
-    background-color: white;
-    border-color: white;
-    padding: 0;
-    margin-right: 150px;
+    display: none;
 }
 
 ul{
@@ -37,16 +34,13 @@ ul{
     display: flex;
     justify-content: center;
     gap: 40px;
-    left: 60%;
-    margin-left: 425px;
 }
-
 
 .media{
     display: flex;
     position: relative;
     gap: 10px;
-    margin-left: 400px;
+    margin-right:150px ;
     transform: scale(2, 2);
 }
 
@@ -74,11 +68,13 @@ h4{
         margin:0px;
     }
     .header {
+        flex-direction:column ;
         flex-wrap: wrap;
         justify-content: center;
+        height: 145px;
     }
     h4{
-        margin-left: 140px;
+        margin-left: 200px;
     }
     .media{
         margin: 0px;
@@ -89,16 +85,16 @@ h4{
 
 @media (max-width: 600px) {
     .links {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        display:none
     }
     .media{
         align-items: center;
         gap: 10px;
+        margin-right: 100px;
     }
     .header{
-        height: 300px;
+        height: 200px;
     }
+
 
 }
