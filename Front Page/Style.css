@@ -9,6 +9,7 @@ a{
     font-size: 30px;
     color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all 0.5s ease-out;
 }
 button{
     display: none;
@@ -51,50 +52,44 @@ h4{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-@media (max-width:500px) {
-    h4{
-        margin-right: 135px;
-    }
 
+a:hover{
+    padding-left: 1.5rem;
+    background-color: rgb(222, 223, 225);
 }
-
 @media (max-width: 900px) {
+    h4{
+        margin-right: 90px;
+    }
+    
     .links {
-        position: static;
-        transform: none;
-        order: 1;
-        width: 100%;
-        padding: 10px 0;
-        margin:0px;
+        flex-direction: column;
+        align-items: center;
+        gap:15px;
     }
     .header {
         flex-direction:column ;
-        flex-wrap: wrap;
-        justify-content: center;
-        height: 145px;
-    }
-    h4{
-        margin-left: 200px;
+        padding: 10px 0;
+        height: 285px;
     }
     .media{
-        margin: 0px;
-        margin-left:150px;
+        order: 1;
+        margin: 15px 0;
     }
-    
+
+     a:hover {
+
+        background-color: rgb(222, 223, 225);;
+      }
+
 }
 
 @media (max-width: 600px) {
-    .links {
-        display:none
+    h4{
+        font-size: 40px;
     }
-    .media{
-        align-items: center;
-        gap: 10px;
-        margin-right: 100px;
+    a{
+        font-size: 25px;
     }
-    .header{
-        height: 200px;
-    }
-
 
 }
