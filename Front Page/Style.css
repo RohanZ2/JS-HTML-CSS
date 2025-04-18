@@ -11,8 +11,11 @@ a{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     transition: all 0.5s ease-out;
 }
-button{
+
+.menu{
     display: none;
+    background-color: white;
+    border-color: white;
 }
 
 ul{
@@ -28,13 +31,14 @@ ul{
     justify-content: space-between;
     width: 100%;
     background-color: white;
-    height: 80px;
+    padding:20px 0;
 }
 
 .links{
     display: flex;
     justify-content: center;
     gap: 40px;
+    overflow: hidden;
 }
 
 .media{
@@ -52,25 +56,27 @@ h4{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
 a:hover{
     padding-left: 1.5rem;
     background-color: rgb(222, 223, 225);
 }
+
+.Title-Wrapper{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
 @media (max-width: 900px) {
-    h4{
-        margin-right: 90px;
-    }
-    
     .links {
         flex-direction: column;
         align-items: center;
         gap:15px;
+        padding: 15px 0;
     }
     .header {
         flex-direction:column ;
-        padding: 10px 0;
-        height: 285px;
+        padding: 20px 0;
     }
     .media{
         order: 1;
@@ -78,18 +84,33 @@ a:hover{
     }
 
      a:hover {
-
         background-color: rgb(222, 223, 225);;
       }
 
 }
 
 @media (max-width: 600px) {
+    .header{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .links{
+        display: none;
+    }
     h4{
         font-size: 40px;
+        margin-left: 0px;
     }
     a{
         font-size: 25px;
     }
-
+    .menu{
+        display: block;
+        all: unset;
+        cursor:pointer;
+        transition: all 0.5s ease-out;
+    }
+    .menu:hover{
+        transform: rotate(90deg) scale(1.2);
+    }
 }
