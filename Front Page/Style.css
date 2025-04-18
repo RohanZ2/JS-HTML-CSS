@@ -35,10 +35,10 @@ ul{
 }
 
 .links{
-    display: flex;
     justify-content: center;
     gap: 40px;
-    overflow: hidden;
+    display: flex;
+
 }
 
 .media{
@@ -94,9 +94,7 @@ a:hover{
         justify-content: center;
         flex-wrap: wrap;
     }
-    .links{
-        display: none;
-    }
+
     h4{
         font-size: 40px;
         margin-left: 0px;
@@ -112,5 +110,23 @@ a:hover{
     }
     .menu:hover{
         transform: rotate(90deg) scale(1.2);
+    }
+    .links{
+        display: flex; 
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 20px; 
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: all 0.5s ease-in;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .show-links{
+        opacity: 1;
+        max-height: 500px; 
+        padding: 20px 0; 
     }
 }
