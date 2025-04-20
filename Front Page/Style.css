@@ -1,3 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
 body{
     margin: 0px;
     padding: 0px;
@@ -6,8 +14,6 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed ;
     background-position: center center;
-
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 a{
@@ -75,9 +81,11 @@ a:hover{
     gap:20px;
 }
 
+section{
+    height: 100vh;
+}
 
 .full-window{
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items:center ;
@@ -88,11 +96,39 @@ a:hover{
 .Main-font{
     font-size: 100px;
     color: rgb(0, 0, 0);
-    margin: 0px;
-    
+    margin: 0px; 
 }
 
 .full-window p{
+    margin: 0;
+    text-align:center ;
+    font-size: 20px;
+}
+
+.Projects{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+    background-color: rgb(211, 208, 208);
+}
+
+.Projects p{
+    margin: 0;
+    text-align:center ;
+    font-size: 20px;
+}
+
+.About{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+    background-color: rgb(141, 140, 140);
+}
+
+
+.About p{
     margin: 0;
     text-align:center ;
     font-size: 20px;
