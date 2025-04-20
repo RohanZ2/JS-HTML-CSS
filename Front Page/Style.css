@@ -1,7 +1,11 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: rgb(224, 250, 252);
+    background-image: url(Earth.png);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-attachment: fixed ;
+    background-position: center center;
 }
 
 a{
@@ -38,6 +42,7 @@ ul{
     justify-content: center;
     gap: 40px;
     display: flex;
+    margin: 0px;
 
 }
 
@@ -46,7 +51,7 @@ ul{
     position: relative;
     gap: 10px;
     margin-right:150px ;
-    transform: scale(2, 2);
+    transform: scale(2);
 }
 
 h4{
@@ -57,8 +62,7 @@ h4{
 }
 
 a:hover{
-    padding-left: 1.5rem;
-    background-color: rgb(222, 223, 225);
+    color: rgb(197, 199, 202);
 }
 
 .Title-Wrapper{
@@ -83,9 +87,6 @@ a:hover{
         margin: 15px 0;
     }
 
-     a:hover {
-        background-color: rgb(222, 223, 225);;
-      }
 
 }
 
