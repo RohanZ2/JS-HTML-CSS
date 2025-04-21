@@ -81,14 +81,23 @@ a:hover{
     gap:20px;
 }
 
+.section-container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
 section{
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    scroll-snap-align: start;
+    transition: all 0.5s ease-in-out;
 }
 
 .full-window{
-    display: flex;
-    justify-content: center;
-    align-items:center ;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.2);
 
