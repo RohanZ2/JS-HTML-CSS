@@ -25,3 +25,21 @@ for (let i =0; i < ba.length; i++){
     }
 }
 console.log(b);
+
+
+window.addEventListener("hashchange", function(){
+    const currentHash = window.location.hash;
+    console.log(currentHash)
+    
+    if(currentHash === "#Home" ||currentHash === "#Projects" ||currentHash === "#About"){
+        links.querySelectorAll('.links a').forEach(link => {
+            link.classList.remove('active')
+        });
+        const activeLink   = document.querySelector(`.links a[href="${currentHash}"`)
+        if(activeLink){
+            activeLink.classList.add('active')
+        }
+
+       }
+    }
+)
