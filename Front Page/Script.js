@@ -11,3 +11,17 @@ menu.addEventListener('click', function(){
         links.classList.add('show-links');
     }
 })
+
+if (window.location.hash === "#home"){
+    console.log("Home")
+}
+
+const ba = ["Chrome", "Firefox", "Safari", "Opera", "MSIE"]
+let b, va = navigator.userAgent
+for (let i =0; i < ba.length; i++){
+    if (va.indexOf(ba[i])> - 1 ){
+        b = ba[i];
+        break;
+    }
+}
+console.log(b);

@@ -5,10 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 body{
-    margin: 0px;
-    padding: 0px;
     background-image: url(Earth.png);
     background-size: cover ;
     background-repeat: no-repeat;
@@ -45,7 +42,6 @@ ul{
     background-color: white;
     padding:20px 0;
     position: fixed;
-
 }
 
 .links{
@@ -53,7 +49,6 @@ ul{
     gap: 40px;
     display: flex;
     margin: 0px;
-
 }
 
 .media{
@@ -102,6 +97,7 @@ section{
     background-color: rgba(255, 255, 255, 0.2);
 
 }
+
 .Main-font{
     font-size: 100px;
     color: rgb(0, 0, 0);
@@ -136,24 +132,31 @@ section{
     background-color: rgb(141, 140, 140);
 }
 
-
 .About p{
     margin: 0;
     text-align:center ;
     font-size: 20px;
 }
 
+.links a.active{
+    color: #2c7be5;
+    font-weight: bold;
+}
+
 @media (max-width: 900px) {
+    
     .links {
         flex-direction: column;
         align-items: center;
         gap:15px;
         padding: 15px 0;
     }
+    
     .header {
         flex-direction:column ;
         padding: 20px 0;
     }
+    
     .media{
         order: 1;
         margin: 15px 0;
@@ -161,6 +164,7 @@ section{
 }
 
 @media (max-width: 600px) {
+    
     .header{
         justify-content: center;
         flex-wrap: wrap;
@@ -170,18 +174,22 @@ section{
         font-size: 40px;
         margin-left: 0px;
     }
+    
     a{
         font-size: 25px;
     }
+    
     .menu{
         display: block;
         all: unset;
         cursor:pointer;
         transition: all 0.5s ease-out;
     }
+    
     .menu:hover{
         transform: rotate(90deg) scale(1.2);
     }
+    
     .links{
         display: flex; 
         flex-direction: column;
