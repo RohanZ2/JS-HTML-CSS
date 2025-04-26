@@ -52,18 +52,22 @@ const sections = document.querySelectorAll('.section-container section');
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        links.querySelectorAll('a').forEach(link => {
-            link.classList.remove('active');
-        });
-        
-        const activeLink = document.querySelector(`.links a[href="#${entry.target.id}"]`);
-        if(activeLink) {
-            activeLink.classList.add('active')
+        if (entry.isIntersecting){
+            links.querySelectorAll('a').forEach(link => {
+                link.classList.remove('active');
+            });
+
+            const activeLink = document.querySelector(`.links a[href="#${entry.target.id}"]`);
+            if(activeLink) {
+                activeLink.classList.add('active')
+            }
         }
     });
     
 },
-{threshold:1}
+{
+    threshold:0.5,
+}
 );
 
 sections.forEach(section =>{
