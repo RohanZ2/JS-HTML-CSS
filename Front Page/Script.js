@@ -1,5 +1,6 @@
+//Adds a function to the button makign it drop down the differnt links
 const menu = document.querySelector('.menu')
-const links = document.querySelector('.links')
+const links = document.querySelector('.links');
 
 menu.addEventListener('click', function(){
     
@@ -16,6 +17,8 @@ if (window.location.hash === "#home"){
     console.log("Home")
 }
 
+
+//Checks what brower you are on
 const ba = ["Chrome", "Firefox", "Safari", "Opera", "MSIE"]
 let b, va = navigator.userAgent
 for (let i =0; i < ba.length; i++){
@@ -27,19 +30,42 @@ for (let i =0; i < ba.length; i++){
 console.log(b);
 
 
-window.addEventListener("hashchange", function(){
-    const currentHash = window.location.hash;
-    console.log(currentHash)
+//window.addEventListener("hashchange", function(){
+   // const currentHash = window.location.hash;
     
-    if(currentHash === "#Home" ||currentHash === "#Projects" ||currentHash === "#About"){
-        links.querySelectorAll('.links a').forEach(link => {
-            link.classList.remove('active')
+    //if(currentHash === "#Home" ||currentHash === "#Projects" ||currentHash === "#About"){
+      //  links.querySelectorAll('.links a').forEach(link => {
+        //    link.classList.remove('active')
+        //});
+        //const activeLin  = document.querySelector(`.links a[href="${currentHash}"`)
+        //console.log(activeLink)
+        //if(activeLink){
+          //  activeLink.classList.add('active')
+        //}
+
+       //}
+    //}
+//)
+
+const sections = document.querySelectorAll('.section-container section');
+
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        links.querySelectorAll('a').forEach(link => {
+            link.classList.remove('active');
         });
-        const activeLink   = document.querySelector(`.links a[href="${currentHash}"`)
-        if(activeLink){
+        
+        const activeLink = document.querySelector(`.links a[href="#${entry.target.id}"]`);
+        if(activeLink) {
             activeLink.classList.add('active')
         }
+    });
+    
+},
+{threshold:1}
+);
 
-       }
-    }
-)
+sections.forEach(section =>{
+    observer.observe(section)
+})

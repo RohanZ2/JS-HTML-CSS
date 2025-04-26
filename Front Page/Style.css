@@ -118,6 +118,10 @@ section{
     background-color: rgb(211, 208, 208);
 }
 
+.Projects.show{
+    background-color: aqua;
+
+}
 .Projects p{
     margin: 0;
     text-align:center ;
@@ -138,9 +142,13 @@ section{
     font-size: 20px;
 }
 
+
+
 .links a.active{
-    color: #2c7be5;
+    font-size: 35px;
+    color: #9b9ea1;
     font-weight: bold;
+    
 }
 
 @media (max-width: 900px) {

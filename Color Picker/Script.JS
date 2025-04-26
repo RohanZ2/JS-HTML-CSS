@@ -13,7 +13,7 @@ button.addEventListener("click", function() {
     text.textContent = `BACKGROUND COLOR: ${hexcolor}`;
     document.documentElement.style.setProperty('--hover-color', hexcolor)
 }); 
-text
+
 
 function randomnumber(){
     return Math.floor(Math.random() * hex.length)
