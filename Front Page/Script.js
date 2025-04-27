@@ -30,26 +30,7 @@ for (let i =0; i < ba.length; i++){
 console.log(b);
 
 
-//window.addEventListener("hashchange", function(){
-   // const currentHash = window.location.hash;
-    
-    //if(currentHash === "#Home" ||currentHash === "#Projects" ||currentHash === "#About"){
-      //  links.querySelectorAll('.links a').forEach(link => {
-        //    link.classList.remove('active')
-        //});
-        //const activeLin  = document.querySelector(`.links a[href="${currentHash}"`)
-        //console.log(activeLink)
-        //if(activeLink){
-          //  activeLink.classList.add('active')
-        //}
-
-       //}
-    //}
-//)
-
 const sections = document.querySelectorAll('.section-container section');
-
-
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting){
