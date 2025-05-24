@@ -17,7 +17,6 @@ if (window.location.hash === "#home"){
     console.log("Home")
 }
 
-
 //Checks what brower you are on
 const ba = ["Chrome", "Firefox", "Safari", "Opera", "MSIE"]
 let b, va = navigator.userAgent
@@ -54,3 +53,14 @@ const observer = new IntersectionObserver(entries => {
 sections.forEach(section =>{
     observer.observe(section)
 })
+
+hello(goodbye);
+
+function hello(callback){
+    console.log('hello!');
+    callback();
+}
+
+function goodbye(){
+    console.log('goodbye!');
+}
